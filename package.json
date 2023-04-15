@@ -1,0 +1,25 @@
+{
+  "name": "aulas",
+  "version": "1.0.0",
+  "description": "Aulas de programação",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fregnani123/aulas.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fregnani123/aulas/issues"
+  },
+  "homepage": "https://github.com/fregnani123/aulas#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
