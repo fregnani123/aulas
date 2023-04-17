@@ -1,8 +1,18 @@
 
+const express = require('express')
+const app = express();
 
+const PORT = 3000
 
-
-
+app.get('/', (req,res) => {
+   res.send('Hello world')
+}).listen(PORT, (err)=>{
+  if(err) {
+   console.log(err)
+  }else{
+   console.log('Servidor rodando na ' + PORT)
+  }
+})
 
 
 
