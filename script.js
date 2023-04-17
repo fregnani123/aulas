@@ -3,17 +3,20 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const fs = require('fs');
+const { error } = require('console');
 
 const PORT = 3000;
 
 app.get('/', (req,res) => {
    res.send('<h1>Servidor Ativo<h1>')
-}).listen(PORT, (err)=>{
-  if(err) {
-   console.log(err)
-  }else{
-   console.log('Servidor rodando na ' + PORT)
-  }
+})
+
+app.post('/',(req,res) => {
+    res.send('Recebi o formulario')
+})
+
+app.listen(PORT, () => {
+ console.log('Servidor rodando na porta ' + PORT)
 })
 
 
