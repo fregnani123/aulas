@@ -1,11 +1,13 @@
 
-const express = require('express')
+const express = require('express');
 const app = express();
+const path = require('path');
+const fs = require('fs');
 
-const PORT = 3000
+const PORT = 3000;
 
 app.get('/', (req,res) => {
-   res.send('Hello world')
+   res.send('<h1>Servidor Ativo<h1>')
 }).listen(PORT, (err)=>{
   if(err) {
    console.log(err)
