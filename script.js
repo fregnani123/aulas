@@ -3,18 +3,26 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const fs = require('fs');
+const { type } = require('os');
+
 
 
 const PORT = 3000;
 
-
+app.use(express.urlencoded({extended: true}))
 
 app.get('/', (req,res) => {
-   res.send('<form action="POST"> Nome do cliente: <input type="text" name="nome"><button>Olá Mundo</button></form>');
+   res.send(`<form method="POST"> Nome do cliente: <input type="text" name="nome"><button>Olá Mundo</button></form>`);
 });
 
+app.get('/testes/:idUsuarios?/:parametro?', (req,res)=>{ 
+    console.log(req.query)
+    res.send(req.query);
+});
+
+
 app.post('/',(req,res) => {
-    res.send('Recebi o formulario')
+   res.send(`isso voce enviou: ${req.body.nome}`)  
 })
 
 app.listen(PORT, () => {
