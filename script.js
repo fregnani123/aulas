@@ -3,13 +3,15 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const fs = require('fs');
-const { error } = require('console');
+
 
 const PORT = 3000;
 
+
+
 app.get('/', (req,res) => {
-   res.send('<h1>Servidor Ativo<h1>')
-})
+   res.send('<form action="POST"> Nome do cliente: <input type="text" name="nome"><button>Olá Mundo</button></form>');
+});
 
 app.post('/',(req,res) => {
     res.send('Recebi o formulario')
