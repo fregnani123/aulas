@@ -11,12 +11,9 @@ const PORT = 3000;
 
 app.use(express.urlencoded({extended: true}))
 
-app.get('/', (req,res) => {
-   res.send(`<form method="POST"> Nome do cliente: <input type="text" name="nome"><button>Olá Mundo</button></form>`);
-});
 
 app.get('/testes/:idUsuarios?/:parametro?', (req,res)=>{ 
-    console.log(req.query)
+    console.log(req.params)
     res.send(req.query);
 });
 
