@@ -18,8 +18,7 @@ if (args[0] === 's' ){
    }
  } else {
    console.log('Operação inválida.');
- }
-  
+ } 
 }
 soma()
 
