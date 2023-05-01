@@ -10,15 +10,6 @@ const PORT = 3000;
 app.use(express.urlencoded({extended: true}))
 
 
-app.get('/testes/:idUsuarios?/:parametro?', (req,res)=>{ 
-    console.log(req.params)
-    res.send(req.params);
-});
-
-
-app.post('/',(req,res) => {
-   res.send(`isso voce enviou: ${req.body.nome}`)  
-})
 
 app.listen(PORT, () => {
  console.log('Servidor rodando na porta ' + PORT)
