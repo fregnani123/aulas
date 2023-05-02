@@ -7,3 +7,7 @@ exports.paginaInicial = (req, res) => {
 exports.postAcionado = (req, res) => {
     res.send("novo post")
 }
+
+exports.parametros = (req, res) => { 
+    
+}
