@@ -7,4 +7,6 @@ route.get('/', homeController.paginaInicial);
 
 route.post('/', homeController.postAcionado);
 
+route.get('/teste/:Idusuario', homeController.parametros);
+
 module.exports = route;

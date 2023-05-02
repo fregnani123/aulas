@@ -9,5 +9,5 @@ exports.postAcionado = (req, res) => {
 }
 
 exports.parametros = (req, res) => { 
-    
+    res.send(req.params)
 }
