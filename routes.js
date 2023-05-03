@@ -7,6 +7,6 @@ route.get('/', homeController.paginaInicial);
 
 route.post('/', homeController.postAcionado);
 
-route.get('/teste/:Idusuario?/nome=', homeController.parametros);
+route.get('/teste/:Idusuario/:nome', homeController.parametros);
 
 module.exports = route;
