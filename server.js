@@ -2,12 +2,17 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const routes = require('./routes')
+const routes = require('./routes');
+const exp = require('constants');
 
 
 const PORT = 3000;
 
 app.use(express.urlencoded({extended: true}));
+
+app.use(express.static(path.resolve('index', __dirname, 'teste')))
+
+
 
 app.set('views', path.resolve(__dirname, 'views' ));
 
