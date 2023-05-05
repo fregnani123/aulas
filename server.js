@@ -11,8 +11,6 @@ app.use(express.urlencoded({extended: true}));
 
 app.set('views', path.resolve(__dirname, 'views' ));
 
-app.use(express.static(path.resolve(__dirname, 'teste')))
-
 app.set('view engine', 'ejs');
 
 app.use(routes);
