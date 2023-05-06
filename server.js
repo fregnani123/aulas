@@ -10,9 +10,9 @@ const PORT = 3000;
 
 app.use(express.urlencoded({extended: true}));
 
-app.use(express.static(path.resolve('index', __dirname, 'teste')))
+app.use(express.static('public'));
 
-
+// app.use(express.static(path.resolve('index', __dirname, 'teste')))
 
 app.set('views', path.resolve(__dirname, 'views' ));
 
