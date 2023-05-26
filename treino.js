@@ -1,26 +1,27 @@
 
-const args = process.argv.slice(2)
+// const args = process.argv.slice(2)
 
-const a = Number(args[1]);
-const b = Number(args[2]);
-let c = 0
+// const a = Number(args[1]);
+// const b = Number(args[2]);
+// let c = 0
 
-function soma(){
-if (args[0] === 's' ){
-  c = a + b;
-  console.log(c)
-}else if (args[0] === 'd') {
-   if (b === 0) {
-     console.log('Não é possível dividir por zero.');
-   } else {
-     c = a / b;
-     console.log(c);
-   }
- } else {
-   console.log('Operação inválida.');
- } 
-}
-soma()
+// function soma(){
+// if (args[0] === 's' ){
+//   c = a + b;
+//   console.log(c)
+// }else if (args[0] === 'd') {
+//    if (b === 0) {
+//      console.log('Não é possível dividir por zero.');
+//    } else {
+//      c = a / b;
+//      console.log(c);
+//    }
+//  } else {
+//    console.log('Operação inválida.');
+//  } 
+// }
+// soma()
+
 
 
 
