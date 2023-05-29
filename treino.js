@@ -1,4 +1,17 @@
 
+
+
+function multiplica(x, y){
+   return Number(x * y);
+}
+
+const resultado = multiplica(100,10)
+console.log(resultado)
+
+const maior = 5
+
+maior > 10 ? console.log('maior') : console.log('menor')
+
 // const args = process.argv.slice(2)
 
 // const a = Number(args[1]);
