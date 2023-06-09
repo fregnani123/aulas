@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/fregnani123/aulas/issues"
   },
-  "homepage": "https://github.com/fregnani123/aulas#readme"
+  "homepage": "https://github.com/fregnani123/aulas#readme",
+  "devDependencies": {
+    "express": "^4.18.2"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.22"
+  }
 }
